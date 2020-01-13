@@ -5,6 +5,6 @@ Implementation on data compression algorithms to optimize data storage and time 
 
 <ol>
   <li>
-    Huffman Coding.
+    Huffman Coding. <a href="/huffman">API</a>
   </li>
 </ol>
