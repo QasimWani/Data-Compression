@@ -32,23 +32,23 @@ void tdm::append(char data)
     {
         frq = matrix[ascii]->frequency + 1;
     }
-    // matrix[ascii]->frequency = frq;
-    // if (matrix[ascii] != NULL)
-    // {
-    //     tdm_adt n = new TDM;
-    //     n->character = data;
-    //     n->frequency = frq;
-    //     temp = n;
-    //     matrix[ascii] = temp;
-    // }
-    // cout << temp << endl;
-    // cout << ascii << "\t" << data << endl;
-    // cout << matrix[ascii] << endl;
-    // if(matrix[ascii] < max)
-    // {
-    //     frq = matrix[ascii] + 1;
-    // }
-    // matrix[ascii] = frq;
+    matrix[ascii]->frequency = frq;
+    if (matrix[ascii] != NULL)
+    {
+        tdm_adt n = new TDM;
+        n->character = data;
+        n->frequency = frq;
+        temp = n;
+        matrix[ascii] = temp;
+    }
+    cout << temp << endl;
+    cout << ascii << "\t" << data << endl;
+    cout << matrix[ascii] << endl;
+    if(matrix[ascii] < max)
+    {
+        frq = matrix[ascii] + 1;
+    }
+    matrix[ascii] = frq;
 }
 
 tdm::tdm_adt tdm::generateTDM(string data)
