@@ -73,12 +73,12 @@ int tdm::mostCommonFrq(int index)
 
 void tdm::printTDM()
 {
-    // for (int i = 0; i < 128; i++)
-    // {
-    //     if (&matrix[i]->character!=NULL)
-    //     {
-    //         cout << i << ".\t: " << matrix[i] << endl; 
-    //     }
+    for (int i = 0; i < 128; i++)
+    {
+        if (&matrix[i]->character!=NULL)
+        {
+            cout << i << ".\t: " << matrix[i] << endl; 
+        }
 
-    // }
+    }
 }
